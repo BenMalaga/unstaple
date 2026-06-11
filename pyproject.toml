@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unstaple"
+version = "0.1.0"
+description = "Split one fat scanned PDF of stapled-together documents into correctly-bounded, sensibly-named separate PDFs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Ben Malaga", email = "benmalaga03@gmail.com" }]
+keywords = ["pdf", "split", "scan", "documents", "paperless", "cli", "archiving"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business",
+    "Topic :: Utilities",
+]
+dependencies = ["pypdf>=4.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "reportlab>=4.0"]
+
+[project.scripts]
+unstaple = "unstaple.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/BenMalaga/unstaple"
+Issues = "https://github.com/BenMalaga/unstaple/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

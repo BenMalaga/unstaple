@@ -1,0 +1,20 @@
+# virtualenvs
+.venv/
+venv/
+
+# python build artifacts
+__pycache__/
+*.py[cod]
+dist/
+build/
+*.egg-info/
+
+# test artifacts
+.pytest_cache/
+
+# generated synthetic fixtures (rebuilt by conftest.py; real anonymized
+# fixtures contributed under tests/fixtures/real/ are tracked)
+tests/fixtures/*.pdf
+
+# default output directory
+unstapled/
