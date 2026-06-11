@@ -5,7 +5,7 @@
 **Split one fat scanned PDF of stapled-together documents into correctly-bounded, sensibly-named separate PDFs.**
 
 [![CI](https://github.com/BenMalaga/unstaple/actions/workflows/test.yml/badge.svg)](https://github.com/BenMalaga/unstaple/actions/workflows/test.yml)
-[![PyPI](https://img.shields.io/pypi/v/unstaple)](https://pypi.org/project/unstaple/)
+[![release](https://img.shields.io/github/v/release/BenMalaga/unstaple?color=blue&label=release)](https://github.com/BenMalaga/unstaple/releases)
 [![Python](https://img.shields.io/badge/python-%3E%3D3.10-blue)](https://pypi.org/project/unstaple/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
